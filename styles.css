@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(yule-background.png);
+    height: 100%;
+    width: 100%;
+}
+
+.button-wrapper {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.speech-bubble {
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #3b2e1e;
+    background-color: #907a48;
+}
+
+.button:hover {
+    background-color:#d4bf88;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.yule-image {
+    height: 40px;
+    width: 40px;
+}
+
+.speech-bubble {
+    
+}
