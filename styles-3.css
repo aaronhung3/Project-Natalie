@@ -30,23 +30,23 @@ body {
     height: 50px;
     width: 150px;
     font-family: cursive;
+    font-weight: bold;
     display: block;
     margin: 0 auto;
     padding: 0;
     display: inline-block;
     line-height: 50px;
     text-align: center;
-    background-color: white;
-    color: #131313;
-    border: 3px solid black;
-    border-color: black;
+    background-color: #d4bf88;
+    color: #907a48;
+    border: 3px solid #907a48;
     border-radius: 10px;
     cursor: pointer;
   }
 
   button:hover {
-    background-color: black;
-    color: white;
+    background-color: #907a48;
+    color: #d4bf88;
   }
   
 
@@ -98,15 +98,42 @@ span {
     display: inline-block;
     line-height: 50px;
     text-align: center;
-    background-color: white;
+    background-color: #d4bf88;
     color: #131313;
     border: 3px solid black;
-    border-color: black;
+    border-color: #907a48;
     border-radius: 10px;
     cursor: pointer;
+    transition: all .5s ease-in-out;
 }
 
 #resetButton:hover {
-    background-color: black;
+    background-color: #d4bf88;
     color: white;
+    transform: scale(1.1);
+}
+
+#nextButton {
+    height: 50px;
+    width: 150px;
+    font-family: cursive;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    background-color: #d4bf88;
+    color: #131313;
+    border: 3px solid black;
+    border-color: #907a48;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+#nextButton:hover {
+    background-color: #d4bf88;
+    color: white;
+    transform: scale(1.1);
 }
