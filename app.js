@@ -6,7 +6,7 @@ const quizData = [
     },
     {
         question: "2. What is Aaron's favorite food?",
-        options: ["Pasta", "Chocolate cookie", "Beaver", "Natalie"],
+        options: ["Natalie", "Chocolate cookie", "Beaver", "Pasta"],
         answer: "Pasta"
     },
     {
@@ -53,10 +53,12 @@ function selectAnswer(e) {
   if (selectedButton.innerText === answer) {
     score++;
   }
-  if (selectedButton.innerText !== answer) {
+
+  currentQuestion++;
+
+  if (selectedButton.innerText != answer) {
     wrongAnswer.push(currentQuestion);
   }
-  currentQuestion++;
   
 
   if (currentQuestion < quizData.length) {
@@ -71,7 +73,7 @@ function showResult() {
         quiz.innerHTML = `
             <h1>Quiz Completed! Fail...</h1>
             <p>Your score: ${score}/${quizData.length}</p>
-            <p>Wrong Answers: ${wrongAnswer}</p>
+            <p>Questions Wrong: ${wrongAnswer}</p>
             <button id="resetButton">Retry</button>
         `;
         var retry = document.getElementById("resetButton");
