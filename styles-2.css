@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--bg-color);
+    background: url(message-background.png);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +54,7 @@ body {
 .container > .envelope-wrapper > .envelope::after {
     content: '';
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     border-top: 250px solid transparent;
     border-left: 350px solid var(--envelope-cover);
     border-right: 350px solid var(--envelope-cover);
@@ -113,7 +113,7 @@ text-align: left;
 }
 
 .flap > .envelope::before {
-    z-index: 0;
+    z-index: 4;
     transform: rotateX(180deg);
 }
 
@@ -121,7 +121,7 @@ text-align: left;
     bottom: 230px;
     transform: scale(1.05);
     transition-delay: 1s;
-    z-index: 2;
+    z-index: 3;
 }
 
 .flap > .heart {
