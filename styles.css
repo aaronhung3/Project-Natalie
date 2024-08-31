@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(yule-background.png);
+    background-image: url(img/yule-background.png);
     height: 100%;
     width: 100%;
 }
@@ -87,4 +87,10 @@ body {
     border-bottom: 10px solid transparent;
     left: 19px;
     bottom: -19px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
 }
