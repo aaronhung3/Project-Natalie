@@ -1,6 +1,9 @@
 body {
     background-color: bisque;
     font-family: cursive;
+    width: 100%;
+    max-width: 1920px; 
+    background-size: 100%;
     background-image: url(img/classroom.png);
 }
 
@@ -136,4 +139,8 @@ span {
     background-color: #d4bf88;
     color: white;
     transform: scale(1.1);
+}
+
+#quiz, #question {
+    font-size: medium;
 }

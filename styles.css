@@ -4,9 +4,11 @@
 }
 
 body {
-    background-image: url(img/yule-background.png);
-    height: 100%;
     width: 100%;
+    max-width: 1920px; 
+    background-size: 100%;
+    background-image: url(img/yule-background.png);
+    
 }
 
 .title-image {
@@ -87,10 +89,4 @@ body {
     border-bottom: 10px solid transparent;
     left: 19px;
     bottom: -19px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9;
 }

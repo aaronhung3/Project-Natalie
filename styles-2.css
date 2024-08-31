@@ -10,19 +10,20 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: url(img/message-background.png);
+    width: 100%;
+    max-width: 1920px; 
+    background-size: 100%;
+    background: url(img/message-background.png) no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .container {
-    height: 70vh;
+    height: 0;
     position: absolute;
-    top: 30%;
+    top: 65%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,14 +37,14 @@ body {
 .container > .envelope-wrapper > .envelope {
     position: relative;
     width: 700px;
-    height: 500px;
+    height: 400px;
 }
 
 .container > .envelope-wrapper > .envelope::before {
     content: '';
     position: absolute;
     z-index: 2;
-    border-top: 300px solid var(--envelope-tab);
+    border-top: 200px solid var(--envelope-tab);
     border-right: 350px solid transparent;
     border-left: 350px solid transparent;
     top: 0;
@@ -55,10 +56,10 @@ body {
     content: '';
     position: absolute;
     z-index: 3;
-    border-top: 250px solid transparent;
+    border-top: 200px solid transparent;
     border-left: 350px solid var(--envelope-cover);
     border-right: 350px solid var(--envelope-cover);
-    border-bottom: 250px solid var(--envelope-cover);
+    border-bottom: 200px solid var(--envelope-cover);
     bottom: 0;
 }
 
@@ -83,7 +84,7 @@ text-align: left;
 
 .heart {
     position:absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     width: 15px;
     height: 15px;
